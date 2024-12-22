@@ -4,6 +4,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
+import { User } from './users/entities/user.entity';
 
 // Ici j'ai utilisé chatgpt pour comprendre comment utiliser sequelize avec configmodule et éviter d'avoir les infos de connexion en dur
 
@@ -22,6 +23,7 @@ import { UsersModule } from './users/users.module';
         username: configService.get<string>('DB_USER'),
         password: configService.get<string>('DB_PASSWORD'),
         database: configService.get<string>('DB_DATABASE'),
+        models: [User], 
       }),
     }),
     UsersModule,
