@@ -14,4 +14,7 @@ export class User extends Model {
 
   @Column
   updatedAt: Date;
+
+  @Column
+  pic: string;
 }
