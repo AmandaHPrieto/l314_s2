@@ -6,7 +6,7 @@ async function bootstrap() {
 
   // Activer CORS pour le frontend Angular pour l'exercice de la semaine 3
   app.enableCors({
-    origin: 'http://localhost:4200', // URL du front
+    origin: true,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     allowedHeaders: 'Content-Type, Authorization',
     credentials: true,
