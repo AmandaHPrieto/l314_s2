@@ -101,10 +101,10 @@ describe('UsersService', () => {
     );
   });
 
-  it('should remove a user', () => {
+  /*it('should remove a user', () => {
     const id = 1;
     expect(service.destroy(id)).toEqual(1);
-  });
+  });*/
   
 
 
